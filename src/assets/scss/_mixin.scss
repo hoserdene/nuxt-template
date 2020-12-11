@@ -1,0 +1,11 @@
+@mixin bg-size($size){
+  background-size: $size;
+}
+@mixin bg-position($x, $y) {
+  background-position: $x $y;
+}
+@mixin bg-cover-center {
+  background-repeat: no-repeat;
+  @include bg-size(cover);
+  @include bg-position(center, center);
+}
